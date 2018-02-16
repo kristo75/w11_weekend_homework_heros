@@ -2,6 +2,7 @@ const Hero = function(name, favFood, health) {
   this.name = name;
   this.favFood = favFood;
   this.health = health;
+  
 
 }
 
