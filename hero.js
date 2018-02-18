@@ -2,7 +2,8 @@ const Hero = function(name, favFood, health) {
   this.name = name;
   this.favFood = favFood;
   this.health = health;
-  
+  this.tasks = [];
+
 
 }
 
@@ -16,6 +17,18 @@ Hero.prototype.isFavFood = function (food) {
 
 Hero.prototype.hasHealth = function (health) {
   return health.name === this.hashealth ? true : false;
+}
+
+Hero.prototype.eatFood = function (food){
+if(food.name ===this.favFood){
+  this.health += food.replenishmentValue * 1.5;
+} else {
+  this.health += food.replenishmentValue;
+}
+
+Hero.prototype.add = function(task) {
+  this.tasks.push(task);
+};
 }
 
 

@@ -3,6 +3,7 @@ const Task = function(difficultyLevel, urgencyLevel, reward, description){
   this.urgencyLevel = urgencyLevel;
   this.reward = reward;
   this.description = description;
+  
 }
 
 Task.prototype.completeTask = function(){
